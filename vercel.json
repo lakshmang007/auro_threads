@@ -8,11 +8,17 @@
     ],
     "routes": [
         {
+            "src": "/api/(.*)",
+            "dest": "dist/index.cjs"
+        },
+        {
+            "src": "/assets/(.*)",
+            "dest": "dist/public/assets/$1"
+        },
+        {
             "src": "/(.*)",
             "dest": "dist/index.cjs"
         }
     ],
-    "env": {
-        "NODE_ENV": "production"
-    }
+    "outputDirectory": "dist/public"
 }
