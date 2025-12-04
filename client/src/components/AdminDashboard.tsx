@@ -14,7 +14,7 @@ import { useToast } from "@/hooks/use-toast";
 
 // todo: remove mock functionality
 const stats = [
-  { title: "Total Revenue", value: "$12,459", icon: DollarSign, change: "+12.5%", color: "text-green-400" },
+  { title: "Total Revenue", value: "₹12,459", icon: DollarSign, change: "+12.5%", color: "text-green-400" },
   { title: "Orders", value: "156", icon: ShoppingBag, change: "+8.2%", color: "text-neon-pink" },
   { title: "Products", value: "24", icon: Package, change: "+3", color: "text-neon-cyan" },
   { title: "Customers", value: "1,245", icon: Users, change: "+18.7%", color: "text-neon-purple" },
@@ -176,7 +176,7 @@ export default function AdminDashboard() {
                       <TableCell>
                         <Badge variant="secondary">{product.category}</Badge>
                       </TableCell>
-                      <TableCell className="text-neon-cyan font-bold">${product.price}</TableCell>
+                      <TableCell className="text-neon-cyan font-bold">₹{product.price}</TableCell>
                       <TableCell>
                         <Badge
                           className={
@@ -241,7 +241,7 @@ export default function AdminDashboard() {
                       <TableCell className="font-mono">{order.id}</TableCell>
                       <TableCell>{order.date}</TableCell>
                       <TableCell>{order.items.length} items</TableCell>
-                      <TableCell className="text-neon-cyan font-bold">${order.total.toFixed(2)}</TableCell>
+                      <TableCell className="text-neon-cyan font-bold">₹{order.total.toFixed(2)}</TableCell>
                       <TableCell>{getStatusBadge(order.status)}</TableCell>
                       <TableCell className="text-right">
                         <Select

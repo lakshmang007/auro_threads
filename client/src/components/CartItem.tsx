@@ -62,7 +62,7 @@ export default function CartItem({ item }: CartItemProps) {
             </Button>
           </div>
           <span className="font-bold text-neon-cyan" data-testid={`text-item-price-${item.id}`}>
-            ${(item.price * item.quantity).toFixed(2)}
+            ₹{(item.price * item.quantity).toFixed(2)}
           </span>
         </div>
       </div>

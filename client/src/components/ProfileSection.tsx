@@ -126,12 +126,12 @@ export default function ProfileSection() {
                             {item.size} / {item.color} x{item.quantity}
                           </span>
                         </div>
-                        <span className="text-neon-cyan font-bold">${item.price.toFixed(2)}</span>
+                        <span className="text-neon-cyan font-bold">₹{item.price.toFixed(2)}</span>
                       </div>
                     ))}
                     <div className="border-t border-border pt-3 flex justify-between font-bold">
                       <span>Total</span>
-                      <span className="text-neon-pink">${order.total.toFixed(2)}</span>
+                      <span className="text-neon-pink">₹{order.total.toFixed(2)}</span>
                     </div>
                   </div>
                 </CardContent>
@@ -162,7 +162,7 @@ export default function ProfileSection() {
                     <div className="flex-1">
                       <h4 className="font-bold">{item.name}</h4>
                       <p className="text-sm text-muted-foreground">{item.category}</p>
-                      <p className="text-lg font-bold text-neon-cyan mt-1">${item.price.toFixed(2)}</p>
+                      <p className="text-lg font-bold text-neon-cyan mt-1">₹{item.price.toFixed(2)}</p>
                     </div>
                   </CardContent>
                 </Card>

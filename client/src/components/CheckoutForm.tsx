@@ -217,7 +217,7 @@ export default function CheckoutForm() {
             disabled={isProcessing}
             data-testid="button-place-order"
           >
-            {isProcessing ? "PROCESSING..." : `PLACE ORDER - $${total.toFixed(2)}`}
+            {isProcessing ? "PROCESSING..." : `PLACE ORDER - ₹${total.toFixed(2)}`}
           </Button>
         </form>
       </div>
@@ -239,7 +239,7 @@ export default function CheckoutForm() {
                     {item.size} / {item.color} x{item.quantity}
                   </p>
                   <p className="text-sm font-bold text-neon-cyan mt-1">
-                    ${(item.price * item.quantity).toFixed(2)}
+                    ₹{(item.price * item.quantity).toFixed(2)}
                   </p>
                 </div>
               </div>
@@ -248,15 +248,15 @@ export default function CheckoutForm() {
             <div className="border-t border-border pt-4 space-y-2 text-sm">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Subtotal</span>
-                <span>${subtotal.toFixed(2)}</span>
+                <span>₹{subtotal.toFixed(2)}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Shipping</span>
-                <span>{shippingCost === 0 ? "FREE" : `$${shippingCost.toFixed(2)}`}</span>
+                <span>{shippingCost === 0 ? "FREE" : `₹${shippingCost.toFixed(2)}`}</span>
               </div>
               <div className="flex justify-between text-lg font-bold pt-2 border-t border-border">
                 <span>Total</span>
-                <span className="text-neon-cyan">${total.toFixed(2)}</span>
+                <span className="text-neon-cyan">₹{total.toFixed(2)}</span>
               </div>
             </div>
           </CardContent>

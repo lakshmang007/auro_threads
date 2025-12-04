@@ -26,7 +26,7 @@ const features = [
   {
     icon: Truck,
     title: "Fast Shipping",
-    description: "48-hour express delivery available. Free shipping on orders over $100.",
+    description: "48-hour express delivery available. Free shipping on orders over ₹100.",
     color: "text-green-400",
     bgColor: "bg-green-400/10",
   },

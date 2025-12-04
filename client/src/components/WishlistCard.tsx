@@ -72,7 +72,7 @@ export default function WishlistCard({ item }: WishlistCardProps) {
           </h3>
         </Link>
         <p className="text-sm text-muted-foreground mb-2">{item.category}</p>
-        <p className="text-xl font-black text-neon-cyan mb-4">${item.price.toFixed(2)}</p>
+        <p className="text-xl font-black text-neon-cyan mb-4">₹{item.price.toFixed(2)}</p>
 
         <div className="flex gap-2">
           <Button

@@ -34,7 +34,7 @@ export default function CartSummary({ showCheckoutButton = true }: CartSummaryPr
         <div className="space-y-3 text-sm">
           <div className="flex justify-between">
             <span className="text-muted-foreground">Subtotal ({totalItems} items)</span>
-            <span className="font-medium">${subtotal.toFixed(2)}</span>
+            <span className="font-medium">₹{subtotal.toFixed(2)}</span>
           </div>
           <div className="flex justify-between">
             <span className="text-muted-foreground flex items-center gap-1">
@@ -45,13 +45,13 @@ export default function CartSummary({ showCheckoutButton = true }: CartSummaryPr
               {shippingCost === 0 ? (
                 <span className="text-green-400">FREE</span>
               ) : (
-                `$${shippingCost.toFixed(2)}`
+                `₹${shippingCost.toFixed(2)}`
               )}
             </span>
           </div>
           {subtotal < 100 && (
             <p className="text-xs text-neon-cyan">
-              Add ${(100 - subtotal).toFixed(2)} more for free shipping!
+              Add ₹{(100 - subtotal).toFixed(2)} more for free shipping!
             </p>
           )}
         </div>
@@ -60,7 +60,7 @@ export default function CartSummary({ showCheckoutButton = true }: CartSummaryPr
 
         <div className="flex justify-between text-lg font-bold">
           <span>Total</span>
-          <span className="text-neon-cyan" data-testid="text-total">${total.toFixed(2)}</span>
+          <span className="text-neon-cyan" data-testid="text-total">₹{total.toFixed(2)}</span>
         </div>
       </CardContent>
 

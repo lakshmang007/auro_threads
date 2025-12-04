@@ -127,10 +127,10 @@ export default function ProductDetail({ product }: ProductDetailProps) {
         </div>
 
         <div className="flex items-baseline gap-3">
-          <span className="text-4xl font-black text-neon-cyan">${product.price.toFixed(2)}</span>
+          <span className="text-4xl font-black text-neon-cyan">₹{product.price.toFixed(2)}</span>
           {product.originalPrice && (
             <span className="text-xl text-muted-foreground line-through">
-              ${product.originalPrice.toFixed(2)}
+              ₹{product.originalPrice.toFixed(2)}
             </span>
           )}
         </div>
