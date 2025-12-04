@@ -117,11 +117,11 @@ export default function Footer() {
             <div className="mt-6 space-y-2 text-sm text-muted-foreground">
               <div className="flex items-center gap-2">
                 <MapPin className="w-4 h-4 text-neon-purple" />
-                <span>Tokyo, Japan</span>
+                <span>Bangalore, India</span>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-4 h-4 text-neon-cyan" />
-                <span>+1 (555) AURA-001</span>
+                <span>+91 7411467931</span>
               </div>
             </div>
           </div>
@@ -129,7 +129,7 @@ export default function Footer() {
 
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            2024 Aura Threads. All rights reserved.
+            2025 Aura Threads. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-muted-foreground">
             <Link href="/privacy" className="hover:text-foreground transition-colors">
